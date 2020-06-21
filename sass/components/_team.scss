@@ -58,12 +58,18 @@
   background-position: 50% 50%;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+  }
 }
 
-.soc > .logo:hover,
-.soc > .logo:focus {
-  fill: var(--white-color);
-}
+// .soc > .logo:hover,
+// .soc > .logo:focus {
+//   fill: var(--white-color);
+// }
+
 .soc {
   display: flex;
   justify-content: center;
@@ -75,10 +81,14 @@
   background-color: var(--white-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--hover-logo-web-color);
+  }
 }
-.soc:hover {
-  background-color: var(--hover-logo-web-color);
-}
+// .soc:hover {
+//   background-color: var(--hover-logo-web-color);
+// }
 
 .team-social-logo > .soc:hover .logo {
   fill: var(--white-color);

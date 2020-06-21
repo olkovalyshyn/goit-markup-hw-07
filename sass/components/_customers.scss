@@ -21,12 +21,18 @@
   border-color: #afb1b8;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-logo-web-color);
+    cursor: pointer;
+  }
 }
-.customers-list .item:hover,
-.customers-list .item:focus {
-  border-color: var(--hover-logo-web-color);
-  cursor: pointer;
-}
+// .customers-list .item:hover,
+// .customers-list .item:focus {
+//   border-color: var(--hover-logo-web-color);
+//   cursor: pointer;
+// }
 .customers-list .logo {
   fill: var(--social-logo-base-color);
 
