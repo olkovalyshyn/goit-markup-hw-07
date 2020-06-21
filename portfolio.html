@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -260,11 +261,13 @@
           <div class="sign-up-container">
             <p class="footer-title">Подпишитесь на рассылку</p>
             <ul class="list">
-              <li class="list-email">E-mail</li>
+              <li class="list-email">
+                <label class="email-label"> <input class="email-input" type="email" name="email" placeholder="E-mail" /> </label>
+              </li>
               <li class="list-button">
                 <button class="footer-button">
                   Подписаться
-                  <svg class="button-icon">
+                  <svg class="button-icon" width="24px" height="24px">
                     <use href="./images/sprite.svg#icon-icon-send"></use>
                   </svg>
                 </button>
